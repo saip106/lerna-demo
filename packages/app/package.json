@@ -1,6 +1,6 @@
 {
   "name": "@saip106/lerna-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@saip106/lerna-logger" : "1.0.0"
+    "@saip106/lerna-logger": "^1.0.1"
   }
 }
