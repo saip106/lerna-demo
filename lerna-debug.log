@@ -9,15 +9,39 @@
 6 silly currentBranch
 7 verbose currentBranch master
 8 silly isBehindUpstream
-9 error Error: Command failed: git rev-list --left-right --count origin/master...master
-9 error fatal: ambiguous argument 'origin/master...master': unknown revision or path not in the working tree.
-9 error Use '--' to separate paths from revisions, like this:
-9 error 'git <command> [<revision>...] -- [<file>...]'
-9 error
-9 error
-9 error     at makeError (C:\nvm\v10.13.0\node_modules\lerna\node_modules\execa\index.js:174:9)
-9 error     at Function.module.exports.sync (C:\nvm\v10.13.0\node_modules\lerna\node_modules\execa\index.js:338:15)
-9 error     at Object.execSync (C:\nvm\v10.13.0\node_modules\lerna\node_modules\@lerna\child-process\index.js:22:16)
-9 error     at countLeftRight (C:\nvm\v10.13.0\node_modules\lerna\node_modules\@lerna\version\lib\is-behind-upstream.js:30:31)
-9 error     at isBehindUpstream (C:\nvm\v10.13.0\node_modules\lerna\node_modules\@lerna\version\lib\is-behind-upstream.js:14:27)
-9 error     at VersionCommand.initialize (C:\nvm\v10.13.0\node_modules\lerna\node_modules\@lerna\version\index.js:109:7)
+9 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
+10 silly hasTags
+11 verbose hasTags false
+12 info Looking for changed packages since initial commit.
+13 verbose updated @saip106/lerna-app
+14 verbose updated @saip106/lerna-logger
+15 verbose git-describe undefined => "55b0c33"
+16 silly git-describe parsed => {"refCount":"3","sha":"55b0c33","isDirty":false}
+17 silly batched [ PackageGraphNode {
+17 silly batched     name: '@saip106/lerna-logger',
+17 silly batched     externalDependencies: Map {},
+17 silly batched     localDependencies: Map {},
+17 silly batched     localDependents: Map { '@saip106/lerna-app' => [PackageGraphNode] } } ]
+18 silly batched [ PackageGraphNode {
+18 silly batched     name: '@saip106/lerna-app',
+18 silly batched     externalDependencies: Map {},
+18 silly batched     localDependencies: Map {},
+18 silly batched     localDependents: Map {} } ]
+19 silly gitAdd [ 'C:\\Users\\gudigundlasp\\sandbox\\lerna-repo\\packages\\logger\\package.json',
+19 silly gitAdd   'C:\\Users\\gudigundlasp\\sandbox\\lerna-repo\\packages\\app\\package.json',
+19 silly gitAdd   'C:\\Users\\gudigundlasp\\sandbox\\lerna-repo\\lerna.json' ]
+20 silly gitCommit v1.0.1
+21 verbose git [ 'commit', '-m', 'v1.0.1' ]
+22 silly gitTag v1.0.1
+23 verbose git [ 'tag', 'v1.0.1', '-m', 'v1.0.1' ]
+24 info git Pushing tags...
+25 silly gitPush origin master
+26 error Error: Command failed: git push --follow-tags --no-verify origin master
+26 error fatal: HttpRequestException encountered.
+26 error    An error occurred while sending the request.
+26 error bash: /dev/tty: No such device or address
+26 error error: failed to execute prompt script (exit code 1)
+26 error fatal: could not read Username for 'https://github.com': No error
+26 error
+26 error     at makeError (C:\nvm\v10.13.0\node_modules\lerna\node_modules\execa\index.js:174:9)
+26 error     at Promise.all.then.arr (C:\nvm\v10.13.0\node_modules\lerna\node_modules\execa\index.js:278:16)
