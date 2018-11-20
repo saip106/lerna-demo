@@ -1,12 +1,23 @@
-15 error Error: Command failed: git rev-list --left-right --count origin/master...master
-15 error fatal: ambiguous argument 'origin/master...master': unknown revision or path not in the working tree.
-15 error Use '--' to separate paths from revisions, like this:
-15 error 'git <command> [<revision>...] -- [<file>...]'
-15 error
-15 error
-15 error     at makeError (C:\nvm\v10.13.0\node_modules\lerna\node_modules\execa\index.js:174:9)
-15 error     at Function.module.exports.sync (C:\nvm\v10.13.0\node_modules\lerna\node_modules\execa\index.js:338:15)
-15 error     at Object.execSync (C:\nvm\v10.13.0\node_modules\lerna\node_modules\@lerna\child-process\index.js:22:16)
-15 error     at countLeftRight (C:\nvm\v10.13.0\node_modules\lerna\node_modules\@lerna\version\lib\is-behind-upstream.js:30:31)
-15 error     at isBehindUpstream (C:\nvm\v10.13.0\node_modules\lerna\node_modules\@lerna\version\lib\is-behind-upstream.js:14:27)
-15 error     at VersionCommand.initialize (C:\nvm\v10.13.0\node_modules\lerna\node_modules\@lerna\version\index.js:109:7)
+0 silly argv { _: [ 'version' ],
+0 silly argv   lernaVersion: '3.4.3',
+0 silly argv   '$0': 'C:\\Program Files\\nodejs\\node_modules\\lerna\\cli.js' }
+1 notice cli v3.4.3
+2 verbose rootPath C:\Users\gudigundlasp\sandbox\lerna-repo
+3 info current version 1.0.0
+4 silly isAnythingCommitted
+5 verbose isAnythingCommitted 1
+6 silly currentBranch
+7 verbose currentBranch master
+8 silly isBehindUpstream
+9 error Error: Command failed: git rev-list --left-right --count origin/master...master
+9 error fatal: ambiguous argument 'origin/master...master': unknown revision or path not in the working tree.
+9 error Use '--' to separate paths from revisions, like this:
+9 error 'git <command> [<revision>...] -- [<file>...]'
+9 error
+9 error
+9 error     at makeError (C:\nvm\v10.13.0\node_modules\lerna\node_modules\execa\index.js:174:9)
+9 error     at Function.module.exports.sync (C:\nvm\v10.13.0\node_modules\lerna\node_modules\execa\index.js:338:15)
+9 error     at Object.execSync (C:\nvm\v10.13.0\node_modules\lerna\node_modules\@lerna\child-process\index.js:22:16)
+9 error     at countLeftRight (C:\nvm\v10.13.0\node_modules\lerna\node_modules\@lerna\version\lib\is-behind-upstream.js:30:31)
+9 error     at isBehindUpstream (C:\nvm\v10.13.0\node_modules\lerna\node_modules\@lerna\version\lib\is-behind-upstream.js:14:27)
+9 error     at VersionCommand.initialize (C:\nvm\v10.13.0\node_modules\lerna\node_modules\@lerna\version\index.js:109:7)
